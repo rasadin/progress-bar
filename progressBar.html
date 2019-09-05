@@ -5,6 +5,10 @@
 <title>Makes "field" required and digits only.</title>
 <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
 <style>
+
+h2 {
+  color: #fff;
+}
      * {
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
@@ -29,9 +33,9 @@
             width: 900px;
             margin: auto;
             position: relative;
-            top: -10%;        
+            top: -50%;        
             transform: translateY(10%);
-            background: #FFF;
+            background: #222;
         }
 
         .col-8 {
@@ -49,7 +53,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Aldrich);
 
-body{background:#333;}
+body{background:#222}
 .progressbar{
     position:relative;
     display:block;
@@ -269,6 +273,42 @@ body{background:#333;}
  
 </head>
 <body>
+    
+        <div class="line-bar">
+                <div class="progressbar" data-perc="10.780">   
+                    <div class="bar"><span></span></div>
+                    <div class="label"><span></span></div>
+                    <br>
+                    <br>
+                    <br>
+                    <div><h2>TEMPERATURE Unit: C</h2></div>
+                </div>
+                
+                <div class="progressbar" data-perc="75.58">
+                    <div class="bar color2"><span></span></div>
+                    <div class="label"><span></span></div>
+                    <br>
+                    <br>
+                    <br>
+                    <div><h2>WATER LEVEL Unit: 100%</h2></div>
+                </div>
+                <div class="progressbar" data-perc="50.86">
+                    <div class="bar color3"><span></span></div>
+                    <div class="label"><span></span></div>
+                    <br>
+                    <br>
+                    <br>
+                    <div><h2>bar 3</h2></div>
+                </div>
+                <div class="progressbar" data-perc="25.90">
+                    <div class="bar color4"><span></span></div>
+                    <div class="label"><span></span></div>
+                    <br>
+                    <br>
+                    <br>
+                    <div><h2>bar 4</h2></div>
+                </div>
+             </div>
     <div id="grid">
          <div class="col-8 pic-1">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -280,8 +320,8 @@ body{background:#333;}
                         style="stroke-dashoffset:430px;"
                         stroke-dasharray="430"
                         stroke-width="8px"
-                        stroke="#FEAE00 "
-                        fill="#FDD13B "
+                        stroke="red "
+                        fill="#0313fc "
                         stroke-dashoffset="60"
                         transform="translate(50,50) rotate(-90)" />
                  </g>
@@ -291,43 +331,11 @@ body{background:#333;}
                       fill="#fff"
                       font-family="Verdana"
                       font-size="28">53%</text>
-             </svg>
-            <div class="line-bar">
-                <div class="progressbar" data-perc="10.780">   
-                    <div class="bar"><span></span></div>
-                    <div class="label"><span></span></div>
-                    <br>
-                    <br>
-                    <br>
-                    <div><h1>bar 1</h1></div>
-                </div>
-                
-                <div class="progressbar" data-perc="75.58">
-                    <div class="bar color2"><span></span></div>
-                    <div class="label"><span></span></div>
-                    <br>
-                    <br>
-                    <br>
-                    <div><h1>bar 2</h1></div>
-                </div>
-                <div class="progressbar" data-perc="50.86">
-                    <div class="bar color3"><span></span></div>
-                    <div class="label"><span></span></div>
-                    <br>
-                    <br>
-                    <br>
-                    <div><h1>bar 3</h1></div>
-                </div>
-                <div class="progressbar" data-perc="25.90">
-                    <div class="bar color4"><span></span></div>
-                    <div class="label"><span></span></div>
-                    <br>
-                    <br>
-                    <br>
-                    <div><h1>bar 4</h1></div>
-                </div>
-             </div>
-         </div>
+                      <center> 
+                            <h2>pH</h2>
+                     </center>
+             </svg> 
+        </div>
         <div class="col-8 pic-2">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
 
@@ -338,7 +346,7 @@ body{background:#333;}
                         style="stroke-dashoffset:430px;"
                         stroke-dasharray="430"
                         stroke-width="8px"
-                        stroke="#06B6F2"
+                        stroke="red "
                         fill="#048FD3"
                         stroke-dashoffset="60"
                         transform="translate(50,50) rotate(-90)" />
@@ -349,8 +357,12 @@ body{background:#333;}
                       fill="#fff"
                       font-family="Verdana"
                       font-size="28">58%</text>
+                      <center> 
+                            <div><h2>DISSOLVED OXYGEN <BR>Unit:mg/L </h2></div>
+                     </center>
             </svg>
         </div>
+
         <div class="col-8 pic-3">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                 <circle id="circle3"
@@ -360,7 +372,7 @@ body{background:#333;}
                         style="stroke-dashoffset:430px;"
                         stroke-dasharray="430"
                         stroke-width="8px"
-                        stroke="#16ADA1"
+                        stroke="red"
                         fill="#2FD6CA"
                         stroke-dashoffset="60"
                         transform="translate(50,50) rotate(-90)" />
@@ -371,9 +383,10 @@ body{background:#333;}
                       fill="#fff"
                       font-family="Verdana"
                       font-size="28">58%</text>
-                     <center> <p> hi</p> </center>
-          
-            </svg>
+                     <center> 
+                         <div><h2>WATER TURBIDITY Unit:NTU </h2></div>
+                    </center>
+             </svg>
         </div>
     </div>
 
